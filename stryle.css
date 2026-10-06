@@ -1,0 +1,61 @@
+body{
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    animation: forwards 2s ease-in-out;
+    
+}
+
+#esquerda{
+    background-color: red;
+    animation-name: esquerda;
+}
+
+#direita{
+    background-color: blue;
+    animation-name: direita;
+}
+@keyframes esquerda {
+    0%{
+        transform: translateX(-500px) scale(0);
+    }
+    25%{
+        transform: translateX(-500px) scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: 90%;
+    }
+    100%{
+        transform: translateX(0) scale(2);
+        opacity: 60%;
+    }
+}
+
+@keyframes direita {
+    0%{
+        transform: translateX(500px) scale(0);
+    }
+    25%{
+        transform: translateX(500px) scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: 90%;
+    }
+     100%{
+        transform: translateX(0) scale(2);
+        opacity: 60%;
+    }
+}
+
+    
